@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import getImagePath from '../utils/imagePaths';
 import './Services.css';
 
 const Services = () => {
@@ -44,41 +45,39 @@ const Services = () => {
           <div className="price">£50</div>
           <button className="cta-button">Get Started</button>
         </div>
-        <img src="/images/workout-program.jpg" alt="Personalized workout program" className="service-image" />
-      </div>
-
-      <div className="service-card">
-        <div className="service-content">
-          <h2>Personal Training</h2>
-          <p>Complete package including:</p>
-          <ul>
-            <li>1-hour personal training session</li>
-            <li>Full body scan</li>
-            <li>Personal training support</li>
-            <li>Nutritional advice</li>
-          </ul>
-          <div className="price">£30 per session</div>
-          <button className="cta-button">Book Now</button>
-        </div>
-        <img src="/images/personal-training.jpg" alt="Personal training session" className="service-image" />
+        <img src={getImagePath('workout-program.jpg')} alt="Personalized workout program" className="service-image" />
       </div>
 
       <div className="service-card">
         <div className="service-content">
           <h2>Personalised Meal Plan</h2>
-          <p>Comprehensive nutrition planning including:</p>
+          <p>Get a customized meal plan that fits your lifestyle and helps you achieve your goals.</p>
           <ul>
-            <li>Personalized Caloric Intake</li>
-            <li>Balanced Macronutrients</li>
-            <li>Customized Menu</li>
-            <li>Supplement Recommendations</li>
-            <li>Hydration Plan</li>
-            <li>Snack Suggestions</li>
+            <li>Calorie and macro calculations</li>
+            <li>Shopping list</li>
+            <li>Recipe suggestions</li>
+            <li>Meal timing recommendations</li>
           </ul>
-          <div className="price">£50</div>
+          <div className="price">£40</div>
           <button className="cta-button" onClick={() => setShowForm(true)}>Get Started</button>
         </div>
-        <img src="/images/meal-plan.jpg" alt="Personalized meal plan" className="service-image" />
+        <img src={getImagePath('meal-plan.jpg')} alt="Personalized meal plan" className="service-image" />
+      </div>
+
+      <div className="service-card">
+        <div className="service-content">
+          <h2>Personal Training</h2>
+          <p>One-on-one training sessions tailored to your specific needs and goals.</p>
+          <ul>
+            <li>Form correction</li>
+            <li>Motivation and accountability</li>
+            <li>Real-time feedback</li>
+            <li>Flexible scheduling</li>
+          </ul>
+          <div className="price">£35/session</div>
+          <button className="cta-button">Get Started</button>
+        </div>
+        <img src={getImagePath('personal-training.jpg')} alt="Personal training" className="service-image" />
       </div>
 
       <div className="service-card">

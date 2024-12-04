@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaInstagram, FaFacebookF, FaTwitter } from 'react-icons/fa';
+import getImagePath from '../utils/imagePaths';
 import './About.css';
 
 const About = () => {
@@ -34,7 +35,7 @@ const About = () => {
             <p>I specialize in creating personalized workout programs and nutrition plans that fit your unique lifestyle and goals. Whether you're just starting your fitness journey or looking to take your training to the next level, I'm here to guide and support you every step of the way.</p>
           </div>
           <div className="intro-image">
-            <img src="/images/trainer-profile.jpg" alt="Amy Rose - Personal Trainer" />
+            <img src={getImagePath('trainer-profile.jpg')} alt="Amy Rose - Personal Trainer" />
           </div>
         </div>
       </section>
@@ -68,7 +69,7 @@ const About = () => {
           <li>Progressive challenges to keep you motivated</li>
         </ul>
         <div className="video-container">
-          <video controls poster="/images/video-thumbnail.jpg">
+          <video controls poster={getImagePath('video-thumbnail.jpg')}>
             <source src="/videos/training-philosophy.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>

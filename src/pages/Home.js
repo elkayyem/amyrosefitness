@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaInstagram, FaFacebookF, FaTwitter } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import getImagePath from '../utils/imagePaths';
 import './Home.css';
 
 const Home = () => {
@@ -19,7 +20,7 @@ const Home = () => {
         </div>
         <div className="hero-image-container">
           <div className="hero-image-overlay"></div>
-          <img src="/images/hero-image.jpg" alt="Fitness training" className="hero-image" />
+          <img src={getImagePath('hero-image.jpg')} alt="Fitness training" className="hero-image" />
         </div>
       </div>
       
