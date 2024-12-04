@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/amyrosefitness/static/css/main.520ff851.css",
-    "main.js": "/amyrosefitness/static/js/main.0b7b3e6f.js",
+    "main.js": "/amyrosefitness/static/js/main.709032d6.js",
     "static/js/453.104e2b18.chunk.js": "/amyrosefitness/static/js/453.104e2b18.chunk.js",
     "index.html": "/amyrosefitness/index.html",
     "main.520ff851.css.map": "/amyrosefitness/static/css/main.520ff851.css.map",
-    "main.0b7b3e6f.js.map": "/amyrosefitness/static/js/main.0b7b3e6f.js.map",
+    "main.709032d6.js.map": "/amyrosefitness/static/js/main.709032d6.js.map",
     "453.104e2b18.chunk.js.map": "/amyrosefitness/static/js/453.104e2b18.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.520ff851.css",
-    "static/js/main.0b7b3e6f.js"
+    "static/js/main.709032d6.js"
   ]
 }
